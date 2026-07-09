@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 14%;
+    --primary: 215 72% 14%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 215 25% 94%;
+    --secondary-foreground: 215 72% 14%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 26 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 14% 90%;
+    --input: 220 14% 90%;
+    --ring: 215 72% 14%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 215 72% 7%;
+    --foreground: 0 0% 98%;
+    --card: 215 60% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 215 60% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 26 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 30% 18%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 215 30% 16%;
+    --muted-foreground: 220 10% 70%;
+    --accent: 26 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 30% 20%;
+    --input: 215 30% 20%;
+    --ring: 26 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: #FF7A00;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .container-lux {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+  .text-gradient-gold {
+    background: linear-gradient(120deg, #FF9A3D 0%, #FF7A00 50%, #E8650A 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient-navy {
+    background: linear-gradient(120deg, #0B1F3A 0%, #1E4ED8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .glass-dark {
+    background: rgba(11, 31, 58, 0.55);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-luxury;
+  }
+  .btn-lux {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold transition-all duration-300;
+  }
+  .btn-lux-primary {
+    @apply btn-lux bg-luxury text-white shadow-[0_10px_30px_-10px_rgba(255,122,0,0.6)] hover:bg-luxury/90 hover:shadow-[0_16px_40px_-12px_rgba(255,122,0,0.7)] hover:-translate-y-0.5;
+  }
+  .btn-lux-navy {
+    @apply btn-lux bg-navy text-white shadow-[0_10px_30px_-12px_rgba(11,31,58,0.6)] hover:bg-navy-700 hover:-translate-y-0.5;
+  }
+  .btn-lux-outline {
+    @apply btn-lux border border-white/40 text-white hover:bg-white/10;
+  }
+  .card-lux {
+    @apply rounded-2xl border border-border/70 bg-card shadow-[0_2px_20px_-8px_rgba(11,31,58,0.15)] transition-all duration-500;
+  }
+  .lux-input {
+    @apply h-11 w-full rounded-xl border border-border bg-muted/30 px-3.5 text-sm text-navy outline-none transition-all placeholder:text-muted-foreground/70 focus:border-luxury focus:ring-2 focus:ring-luxury/20;
+  }
+  textarea.lux-input {
+    @apply h-auto py-2.5;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .mask-fade-r {
+    mask-image: linear-gradient(to right, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+  }
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .perspective {
+    perspective: 1200px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
