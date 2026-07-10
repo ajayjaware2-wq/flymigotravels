@@ -309,7 +309,7 @@ export const vehicles: Vehicle[] = [
   {
     name: 'Tempo Traveller',
     seats: '12 Seater',
-    image: px('262047'),
+    image: 'https://images.pexels.com/photos/7349013/pexels-photo-7349013.jpeg',
     price: '\u20B96,500/day',
     type: 'Group Travel',
   },

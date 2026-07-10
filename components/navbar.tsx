@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, Plane } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { SITE } from '@/lib/site-data';
+import { Logo } from '@/components/logo';
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -44,16 +45,7 @@ export function Navbar() {
       >
         <nav className="container-lux flex h-[68px] items-center justify-between">
           <a href="#home" className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-luxury to-orange-600 shadow-md">
-              <Plane className="h-4.5 w-4.5 text-white" fill="white" />
-            </span>
-            <span
-              className={`font-display text-xl font-semibold tracking-wide transition-colors ${
-                scrolled ? 'text-navy' : 'text-white'
-              }`}
-            >
-              Flymigo<span className="text-luxury"> Travels</span>
-            </span>
+            <Logo variant={scrolled ? 'dark' : 'light'} />
           </a>
 
           <ul className="hidden items-center gap-1 lg:flex">

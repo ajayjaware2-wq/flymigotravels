@@ -1,8 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Plane, Phone, Mail, MapPin, Instagram, Facebook, Send, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, Send, ArrowRight } from 'lucide-react';
 import { SITE } from '@/lib/site-data';
+import { Logo } from '@/components/logo';
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
@@ -93,12 +94,7 @@ export function Footer() {
       <div className="container-lux relative mt-16 grid grid-cols-2 gap-8 pb-12 sm:grid-cols-3 lg:grid-cols-5">
         <div className="col-span-2 lg:col-span-2">
           <a href="#home" className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-luxury to-orange-600 shadow-md">
-              <Plane className="h-4.5 w-4.5 text-white" fill="white" />
-            </span>
-            <span className="font-display text-xl font-semibold text-white">
-              Flymigo<span className="text-luxury"> Travels</span>
-            </span>
+            <Logo variant="light" />
           </a>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/55">
             {SITE.tagline} We create customized travel experiences — domestic &

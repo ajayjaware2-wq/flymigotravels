@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Plane } from 'lucide-react';
+import { Logo } from '@/components/logo';
 
 export function Preloader() {
   const [done, setDone] = useState(false);
@@ -37,15 +38,13 @@ export function Preloader() {
                 animate={{ rotate: -360 }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
               />
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-luxury to-orange-600 shadow-[0_0_40px_-5px_rgba(255,122,0,0.6)]">
-                <Plane className="h-7 w-7 text-white" />
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-[0_0_40px_-5px_rgba(255,122,0,0.6)]">
+                <Plane className="h-7 w-7 text-navy" />
               </div>
             </div>
 
             <div className="text-center">
-              <p className="font-display text-2xl font-semibold tracking-wide text-white">
-                Flymigo <span className="text-luxury">Travels</span>
-              </p>
+              <Logo variant="light" className="justify-center" />
               <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/50">
                 Customized Travel Experiences
               </p>
