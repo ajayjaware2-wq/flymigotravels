@@ -45,7 +45,7 @@ export function Navbar() {
       >
         <nav className="container-lux flex h-[68px] items-center justify-between">
           <a href="#home" className="flex items-center gap-2.5">
-            <Logo variant={scrolled ? 'dark' : 'light'} />
+            <Logo size={42} />
           </a>
 
           <ul className="hidden items-center gap-1 lg:flex">
@@ -110,9 +110,7 @@ export function Navbar() {
               transition={{ type: 'spring', damping: 28, stiffness: 260 }}
             >
               <div className="flex items-center justify-between">
-                <span className="font-display text-lg font-semibold text-navy">
-                  Flymigo<span className="text-luxury"> Travels</span>
-                </span>
+                <Logo size={36} />
                 <button
                   onClick={() => setOpen(false)}
                   aria-label="Close menu"

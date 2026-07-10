@@ -94,7 +94,7 @@ export function Footer() {
       <div className="container-lux relative mt-16 grid grid-cols-2 gap-8 pb-12 sm:grid-cols-3 lg:grid-cols-5">
         <div className="col-span-2 lg:col-span-2">
           <a href="#home" className="flex items-center gap-2.5">
-            <Logo variant="light" />
+            <Logo size={48} />
           </a>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/55">
             {SITE.tagline} We create customized travel experiences — domestic &

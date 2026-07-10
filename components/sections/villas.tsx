@@ -16,7 +16,7 @@ export function Villas() {
           subtitle="Escape to exclusive private retreats with pools, gardens and space that belongs only to you."
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
           {villas.map((v, i) => (
             <Reveal key={v.name} delay={i * 0.08}>
               <motion.article

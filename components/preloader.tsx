@@ -44,7 +44,7 @@ export function Preloader() {
             </div>
 
             <div className="text-center">
-              <Logo variant="light" className="justify-center" />
+              <Logo size={56} />
               <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/50">
                 Customized Travel Experiences
               </p>
