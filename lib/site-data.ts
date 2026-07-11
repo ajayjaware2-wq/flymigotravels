@@ -6,7 +6,7 @@ export const SITE = {
   phoneRaw: '919321414441',
   email: 'flymigotravels@gmail.com',
   whatsapp: '919321414441',
-  instagram: 'https://instagram.com/flymigotravels',
+  instagram: 'https://instagram.com/flymigo.travels',
   mapsQuery: 'Navi Mumbai, Maharashtra, India',
   tagline: 'Travel Your Way, We\u2019ll Plan the Rest.',
   headline: 'Explore the World,\nYour Way.',
