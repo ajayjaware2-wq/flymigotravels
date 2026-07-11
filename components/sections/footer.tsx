@@ -186,7 +186,7 @@ export function Footer() {
             <SocialBtn href={SITE.instagram} label="Instagram">
               <Instagram className="h-4 w-4" />
             </SocialBtn>
-            <SocialBtn href="https://facebook.com" label="Facebook">
+            <SocialBtn href={SITE.facebook} label="Facebook">
               <Facebook className="h-4 w-4" />
             </SocialBtn>
           </div>
