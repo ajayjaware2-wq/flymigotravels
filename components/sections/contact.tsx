@@ -1,6 +1,6 @@
 'use client';
 
-import { Phone, Mail, MessageCircle, MapPin, Instagram, Clock } from 'lucide-react';
+import { Phone, Mail, MessageCircle, MapPin, Instagram, Facebook, Clock } from 'lucide-react';
 import { SectionHeader } from '@/components/section-header';
 import { Reveal } from '@/components/reveal';
 import { InquiryForm } from '@/components/sections/inquiry-form';
@@ -116,7 +116,24 @@ export function Contact() {
                   </p>
                 </div>
               </a>
-
+                 <a
+  href={SITE.facebook}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group flex items-center gap-3 rounded-2xl glass-dark p-4 transition-all hover:bg-white/15"
+>
+  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#1877F2] text-white">
+    <Facebook className="h-5 w-5" />
+  </span>
+  <div>
+    <p className="text-[11px] uppercase tracking-wider text-white/50">
+      Facebook
+    </p>
+    <p className="text-sm font-semibold text-white">
+      Flymigo Travels
+    </p>
+  </div>
+</a>
               <div className="relative flex-1 overflow-hidden rounded-2xl">
                 <iframe
                   title="Flymigo Travels location map"

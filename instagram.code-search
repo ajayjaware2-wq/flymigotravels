@@ -1,0 +1,57 @@
+# Query: instagram
+# ContextLines: 1
+
+15 results - 4 files
+
+components/sections/contact.tsx:
+    2  
+    3: import { Phone, Mail, MessageCircle, MapPin, Instagram, Clock } from 'lucide-react';
+    4  import { SectionHeader } from '@/components/section-header';
+
+  101                <a
+  102:                 href={SITE.instagram}
+  103                  target="_blank"
+
+  107                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-luxury via-pink-500 to-purple-600 text-white">
+  108:                   <Instagram className="h-5 w-5" />
+  109                  </span>
+
+  111                    <p className="text-[11px] uppercase tracking-wider text-white/50">
+  112:                     Instagram
+  113                    </p>
+
+components/sections/footer.tsx:
+    3  import { useState } from 'react';
+    4: import { Phone, Mail, MapPin, Instagram, Facebook, Send, ArrowRight } from 'lucide-react';
+    5  import { SITE } from '@/lib/site-data';
+
+  185              </SocialBtn>
+  186:             <SocialBtn href={SITE.instagram} label="Instagram">
+  187:               <Instagram className="h-4 w-4" />
+  188              </SocialBtn>
+
+components/sections/gallery.tsx:
+   3  import { motion } from 'framer-motion';
+   4: import { Instagram } from 'lucide-react';
+   5  import { SectionHeader } from '@/components/section-header';
+
+  13          <SectionHeader
+  14:           eyebrow="Instagram Gallery"
+  15            title="Moments Worth Traveling For"
+
+  39                    <div className="p-4">
+  40:                     <Instagram className="h-5 w-5 text-white" />
+  41                      <p className="mt-1 font-display text-sm font-semibold text-white">
+
+  53              <a
+  54:               href={SITE.instagram}
+  55                target="_blank"
+
+  58              >
+  59:               <Instagram className="h-4 w-4" />
+  60                Follow @flymigotravels
+
+lib/site-data.ts:
+  8    whatsapp: '919321414441',
+  9:   instagram: 'https://instagram.com/flymigo.travels',
+  10    mapsQuery: 'Navi Mumbai, Maharashtra, India',
