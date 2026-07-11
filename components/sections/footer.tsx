@@ -124,7 +124,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2.5">
             {quickLinks.map((l) => (
               <li key={l.href}>
-                <a
+                
                   href={l.href}
                   className="text-sm text-white/55 transition-colors hover:text-luxury"
                 >
@@ -142,7 +142,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2.5">
             {serviceLinks.map((s) => (
               <li key={s}>
-                <a
+                
                   href="#services"
                   className="text-sm text-white/55 transition-colors hover:text-luxury"
                 >
@@ -160,7 +160,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2.5">
             {destLinks.map((d) => (
               <li key={d}>
-                <a
+                
                   href="#destinations"
                   className="text-sm text-white/55 transition-colors hover:text-luxury"
                 >
@@ -186,7 +186,7 @@ export function Footer() {
             <SocialBtn href={SITE.instagram} label="Instagram">
               <Instagram className="h-4 w-4" />
             </SocialBtn>
-            <SocialBtn href="https://facebook.com" label="Facebook">
+            <SocialBtn href="https://www.facebook.com/share/17rLK7Jj8k/" label="Facebook">
               <Facebook className="h-4 w-4" />
             </SocialBtn>
           </div>
@@ -206,7 +206,7 @@ function SocialBtn({
   children: React.ReactNode;
 }) {
   return (
-    <a
+    
       href={href}
       target="_blank"
       rel="noopener noreferrer"
