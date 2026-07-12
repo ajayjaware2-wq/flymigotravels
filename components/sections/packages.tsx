@@ -1,5 +1,5 @@
 'use client';
-
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Moon, Check, ArrowRight } from 'lucide-react';
 import { SectionHeader } from '@/components/section-header';
