@@ -54,10 +54,10 @@ export function Navbar() {
                 <a
                   href={l.href}
                   className={`rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
-                    scrolled
-                      ? 'text-navy/80 hover:bg-navy/5 hover:text-navy'
-                      : 'text-white/85 hover:bg-white/10 hover:text-white'
-                  }`}
+                              scrolled
+                                   ? 'text-navy hover:bg-navy/5'
+                              : 'text-white hover:bg-white/10'
+                   }`}
                 >
                   {l.label}
                 </a>
