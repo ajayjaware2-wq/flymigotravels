@@ -14,7 +14,7 @@ export function Logo({ className }: LogoProps) {
         width={80}
         height={80}
         priority
-        className="h-19 w-19 rounded-full object-cover"
+        className="h-20 w-20 rounded-full object-cover"
       />
     </div>
   );
