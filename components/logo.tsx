@@ -11,10 +11,10 @@ export function Logo({ className }: LogoProps) {
       <Image
         src="/images/flymigo-logo.jpeg3.jpeg.png"
         alt="Flymigo Travels"
-        width={96}
-        height={96}
+        width={80}
+        height={80}
         priority
-        className="h-24 w-24 rounded-full object-cover"
+        className="h-20 w-20 rounded-full object-cover"
       />
     </div>
   );
