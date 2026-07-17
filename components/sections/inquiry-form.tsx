@@ -77,10 +77,16 @@ export function InquiryForm() {
     if (!form.destination && !form.whatsapp_number) {
       setStatus('error');
       return;
-    }
-    setStatus('submitting');
+    }  setStatus('submitting');
 
-    await submitInquiry({
+    await fetch(
+  "https://ajayjaware2.app.n8n.cloud/webhook-test/8f447edb-3781-4482-9c80-973a872bcb4d",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
       name: form.name,
       destination: form.destination,
       travel_date: form.travel_date,
@@ -90,7 +96,9 @@ export function InquiryForm() {
       special_requirements: form.special_requirements,
       whatsapp_number: form.whatsapp_number,
       preferred_contact: form.preferred_contact,
-    });
+    }),
+  }
+);
 
     const waUrl = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(buildMessage())}`;
     window.open(waUrl, '_blank');
