@@ -14,7 +14,7 @@ export function Logo({ className }: LogoProps) {
         width={65}
         height={65}
         priority
-        className="h-16 w-auto object-contain"
+        className="h-16 w-16 rounded-full object-cover"
       />
     </div>
   );
