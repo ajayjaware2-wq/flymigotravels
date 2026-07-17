@@ -53,7 +53,7 @@ export function Footer() {
             <h3 className="font-display text-2xl font-semibold text-white sm:text-3xl">
               Get Travel Inspiration
             </h3>
-            <p className="mt-2 text-sm text-white/65">
+            <p className="mt-2 text-sm text-white/80">
               Subscribe for curated destination ideas, seasonal offers and travel
               tips — straight to your inbox.
             </p>
@@ -96,21 +96,21 @@ export function Footer() {
           <a href="#home" className="flex items-center gap-2.5">
             <Logo variant="light" />
           </a>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/55">
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/80">
             {SITE.tagline} We create customized travel experiences — domestic &
             international holidays, honeymoons, luxury stays, car rentals and
             complete travel management.
           </p>
           <div className="mt-5 space-y-2 text-sm">
-            <a href={`tel:${SITE.phoneRaw}`} className="flex items-center gap-2.5 text-white/65 transition-colors hover:text-white">
+            <a href={`tel:${SITE.phoneRaw}`} className="flex items-center gap-2.5 text-white/85 transition-colors hover:text-white">
               <Phone className="h-4 w-4 text-luxury" />
               {SITE.phone}
             </a>
-            <a href={`mailto:${SITE.email}`} className="flex items-center gap-2.5 text-white/65 transition-colors hover:text-white">
+            <a href={`mailto:${SITE.email}`} className="flex items-center gap-2.5 text-white/85 transition-colors hover:text-white">
               <Mail className="h-4 w-4 text-luxury" />
               {SITE.email}
             </a>
-            <p className="flex items-center gap-2.5 text-white/65">
+            <p className="flex items-center gap-2.5 text-white/85">
               <MapPin className="h-4 w-4 text-luxury" />
               {SITE.location} &middot; Est. {SITE.established}
             </p>
@@ -126,7 +126,7 @@ export function Footer() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="text-sm text-white/55 transition-colors hover:text-luxury"
+                  className="text-sm text-white/80 transition-colors hover:text-luxury"
                 >
                   {l.label}
                 </a>
@@ -144,7 +144,7 @@ export function Footer() {
               <li key={s}>
                 <a
                   href="#services"
-                  className="text-sm text-white/55 transition-colors hover:text-luxury"
+                  className="text-sm text-white/80 transition-colors hover:text-luxury"
                 >
                   {s}
                 </a>
@@ -162,7 +162,7 @@ export function Footer() {
               <li key={d}>
                 <a
                   href="#destinations"
-                  className="text-sm text-white/55 transition-colors hover:text-luxury"
+                  className="text-sm text-white/80 transition-colors hover:text-luxury"
                 >
                   {d}
                 </a>
