@@ -44,7 +44,7 @@ export function Navbar() {
         }`}
       >
         <nav className="container-lux flex h-[68px] items-center justify-between">
-          <a href="#home" className="flex items-center gap-2.5 translate-y-4">
+          <a href="#home" className="flex items-center gap-2.5 translate-y-6">
             <Logo variant={scrolled ? 'dark' : 'light'} />
           </a>
 
