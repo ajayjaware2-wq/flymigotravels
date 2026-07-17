@@ -5,6 +5,10 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string;
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
+// =====================
+// Travel Inquiry
+// =====================
+
 export type InquiryPayload = {
   destination?: string;
   travel_date?: string;
@@ -34,6 +38,37 @@ export async function submitInquiry(payload: InquiryPayload) {
     })
     .select('id')
     .maybeSingle();
+
+  return { data, error };
+}
+
+// =====================
+// Reviews
+// =====================
+
+export type ReviewPayload = {
+  name: string;
+  location: string;
+  trip_name: string;
+  rating: number;
+  message: string;
+};
+
+export async function getReviews() {
+  const { data, error } = await supabase
+    .from('reviews')
+    .select('*')
+    .order('created_at', { ascending: false });
+
+  return { data, error };
+}
+
+export async function submitReview(payload: ReviewPayload) {
+  const { data, error } = await supabase
+    .from('reviews')
+    .insert(payload)
+    .select()
+    .single();
 
   return { data, error };
 }

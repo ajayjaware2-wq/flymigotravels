@@ -71,7 +71,7 @@ export function Footer() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
-              className="h-12 flex-1 rounded-full border border-white/15 bg-white/10 px-5 text-sm text-white outline-none transition-all placeholder:text-white/40 focus:border-luxury focus:ring-2 focus:ring-luxury/20"
+              className="h-12 min-w-0 flex-1 rounded-full border border-white/15 bg-white/10 px-5 text-sm text-white outline-none transition-all placeholder:text-white/40 focus:border-luxury focus:ring-2 focus:ring-luxury/20"
             />
             <button
               type="submit"
@@ -175,7 +175,7 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="relative border-t border-white/10">
         <div className="container-lux flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
-          <p className="text-xs text-white/45">
+          <p className="text-xs text-white/70">
             &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.
             Crafted for travelers who dream beyond the ordinary.
           </p>
